@@ -1,0 +1,60 @@
+{
+  "name": "DotnetVSCodeFable",
+  "displayName": "vscode with fable-narumi",
+  "version": "1.0.0",
+  "description": "Writing vscode extension with fable narumi",
+  "publisher": "Vasyl Purchel",
+  "author": "Vasyl Purchel<vasyl.purchel@gmail.com>",
+  "enableProposedApi": false,
+  "main": "./dist/extension.js",
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test",
+    "build": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "contributors": [
+    {
+      "name": "Vasyl Purchel",
+      "url": "https://twitter.com/vasylpurchel"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/vasyl-purchel/dotnet-vscode-fable/issues"
+  },
+  "homepage": "http://vasyl-purchel.dotnet-vscode-fable.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vasyl-purchel/dotnet-vscode-fable.git"
+  },
+  "engines": {
+    "vscode": "^1.1.0"
+  },
+  "keywords": [
+    "fable",
+    "vscode"
+  ],
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {},
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-runtime": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "fable-core": "^1.0.0-narumi-910",
+    "fable-import-vscode": "^0.0.5",
+    "fable-loader": "^1.0.0-narumi-912",
+    "fable-powerpack": "^1.0.0-narumi-3",
+    "vscode": "1.1.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
